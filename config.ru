@@ -1,5 +1,5 @@
 require 'rubygems'
 require 'sinatra'
 
-require 'squeak'
+require './squeak'
 run Sinatra::Application
