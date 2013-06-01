@@ -1,3 +1,12 @@
 source 'http://rubygems.org/'
-gem "sinatra", "1.3.3"
-gem "haml", "3.1.7"
+gem "sinatra"
+gem "haml"
+gem "sqlite3"
+gem "activerecord"
+gem "sinatra-activerecord"
+gem "rake"
+
+group :development do
+  gem "shotgun"
+  gem "tux"
+end
