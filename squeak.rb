@@ -34,7 +34,7 @@ end
 get "/posts/new" do
   @title = "New Post"
   @post = Post.new
-  haml :new_post
+  haml :newpost
 end
 
 post "/posts" do
@@ -42,7 +42,7 @@ post "/posts" do
   if @post.save
     redirect "posts/#{@post.id}"
   else
-    haml :new_post
+    haml :newpost
   end
 end
 
