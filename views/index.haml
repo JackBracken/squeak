@@ -1,7 +1,8 @@
 - @posts.each do |post|
-  %article
-    %header
-      %h2
-        %a{ :href => "/posts/#{post.id}" }
-          = post.title
-        %span= pretty_date(post.created_at)
+  %article.post
+    %h2
+      %a{ :href => "/posts/#{post.id}" }
+        = post.title
+      .date= pretty_date(post.created_at)
+    %p=post.body
+  %hr.post-separator
