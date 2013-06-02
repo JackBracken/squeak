@@ -2,8 +2,6 @@ require 'bundler/setup'
 require 'sinatra'
 require 'haml'
 
-require_relative 'models/init'
-
 helpers do
   def title
     if @title
