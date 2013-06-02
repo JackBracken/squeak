@@ -1,0 +1,12 @@
+.new-post
+  %h1 New Post
+  %form{ :action => "/posts", :method => "post" }
+    %label{ :for => "post_title" }Title:
+    %input{ :id => "post_title", :name => "post[title]", :type => "text", :value => "#{@post.title}" }
+
+    %label{ :for => "post_body" }Body:
+    %textarea{ :id => "post_body", :name => "post[body]" }
+
+    .center-buttons
+      %button{ :type => "submit", :value => "Publish Post" }Publish Post
+      %button{ :type => "submit", :value => "Save Draft" }Save Draft
