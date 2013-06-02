@@ -1,22 +1,15 @@
-/*    * {
-    padding: 0;
-    margin: 0;
-}
-*/
 ol, ul {
     list-style: none;
 }
 
 body {
-    background-color: #43464C;
-    background-color: #72757B;
     background-color: #66696F;
     min-height: 100%;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
 }
 
-#content {
+.content {
     width: 700px;
     margin: 0 auto;
 }
@@ -36,7 +29,7 @@ header {
     right: 50%;
 }
 
-img.headshot {
+.headshot {
     float: none;
     width: 120px;
     border: 3px #4E5053 solid;
@@ -44,7 +37,7 @@ img.headshot {
     padding: 0;
 }
 
-h1.blog-title {
+.blog-title {
     position: relative;
     padding: 3px 12px;
     font-size: 32px;
@@ -80,7 +73,6 @@ h1.blog-title {
 
 .nav li {
     float: left;
-    display: inline;
     padding: 3px 6px 3px 6px;
 }
 
@@ -98,7 +90,7 @@ h1.blog-title {
 .nav a {
     color: #212E48;
     text-decoration: none;
-    font-size: 14x;
+    font-size: 14px;
 }
 
 .active {
