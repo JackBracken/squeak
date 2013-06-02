@@ -1,4 +1,6 @@
-%h1
-  = @post.title
-%p
-  = @post.body
+%article.post
+  %h2
+    %a{ :href => "/posts/#{@post.id}" }
+      = @post.title
+    .date= pretty_date(@post.created_at)
+  %p=@post.body
