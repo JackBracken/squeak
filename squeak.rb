@@ -24,6 +24,15 @@ helpers do
   def delete_post_button(post_id)
     haml :_delete_post_button, locals: { post_id: post_id}
   end
+
+  def menu_builder(args = {})
+    result = "<li>\n"
+    result += "  <a href=\"#{args[:href]}\">\n"
+    result += "    <img src=\"#{args[:src]}\" alt=\"#{args[:title]}\"/>\n"
+    result += "    #{args[:title]}\n"
+    result += "  </a>\n"
+    result += "</li>\n"
+  end
 end
 
 get '/' do

@@ -16,22 +16,10 @@
       %h1.blog-title
         Jack Bracken
       %ul.nav
-        %li
-          %a{:href => "/"}
-            %img{:src => "/img/home.png", :alt => "Home"}
-            Home
-        %li
-          %a{:href => "/photo"}
-            %img{:src => "/img/photo.png", :alt => "Photography"}
-            Photos
-        %li
-          %a{:href => "/rss"}
-            %img{:src => "/img/rss.png", :alt => "RSS feed"}
-            Home
-        %li
-          %a{:href => "/contact"}
-            %img{:src => "/img/contact.png", :alt => "Contact"}
-            Contact
+        =menu_builder(:href => "/",       :src => "/img/home.png",    :title => "Home")
+        =menu_builder(:href => "/photo",  :src => "/img/photo.png",   :title => "Photography")
+        =menu_builder(:href => "/rss",    :src => "/img/rss.png",     :title => "RSS")
+        =menu_builder(:href => "/contact",:src => "/img/contact.png", :title => "Contact")
   .content
     =yield
   %footer
