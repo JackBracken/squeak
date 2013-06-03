@@ -1,6 +1,7 @@
 require 'bundler/setup'
 require 'sinatra'
 require 'haml'
+require 'redcarpet'
 
 require_relative 'models/init'
 
