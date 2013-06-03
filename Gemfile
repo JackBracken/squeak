@@ -6,6 +6,7 @@ gem "activerecord"
 gem "sinatra-activerecord"
 gem "rake"
 gem "git-deploy"
+gem "better_errors"
 
 group :development do
   gem "shotgun"

@@ -13,8 +13,13 @@ GEM
       i18n (= 0.6.1)
       multi_json (~> 1.0)
     arel (3.0.2)
+    better_errors (0.9.0)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
     bond (0.4.3)
     builder (3.0.4)
+    coderay (1.0.9)
+    erubis (2.7.0)
     git-deploy (0.5.4)
       net-scp
       net-ssh
@@ -63,6 +68,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
+  better_errors
   git-deploy
   haml
   rake
