@@ -2,6 +2,12 @@ require 'bundler/setup'
 require 'sinatra'
 require 'haml'
 require 'redcarpet'
+require "better_errors"
+
+configure :development do
+  use BetterErrors::Middleware
+  BetterErrors.application_root = File.expand_path("..", __FILE__)
+end
 
 require_relative 'models/init'
 
@@ -50,11 +56,11 @@ end
 post "/posts" do
   @post = Post.new(params[:post])
   markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, 
-                                      :autolink => true, 
-                                      :space_after_headers => true, 
-                                      :underline => true,
-                                      :no_intra_emphasis => true
-                                    )
+                            :autolink => true, 
+                            :space_after_headers => true, 
+                            :underline => true,
+                            :no_intra_emphasis => true
+                          )
   @post.body = markdown.render(@post.body)
   
   if @post.save
