@@ -48,6 +48,14 @@ end
 
 post "/posts" do
   @post = Post.new(params[:post])
+  markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, 
+                                      :autolink => true, 
+                                      :space_after_headers => true, 
+                                      :underline => true,
+                                      :no_intra_emphasis => true
+                                    )
+  @post.body = markdown.render(@post.body)
+  
   if @post.save
     redirect "posts/#{@post.id}"
   else

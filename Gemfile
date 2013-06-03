@@ -6,9 +6,10 @@ gem "activerecord"
 gem "sinatra-activerecord"
 gem "rake"
 gem "git-deploy"
-gem "better_errors"
+gem "redcarpet"
 
 group :development do
+  gem "better_errors"	
   gem "shotgun"
   gem "tux"
 end
