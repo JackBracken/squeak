@@ -1,5 +1,33 @@
 ol, ul {
     list-style: none;
+    color: #DCD8D2;
+    font-size: 18px;
+    font-family: Georgia;
+    padding-left: 36px;
+}
+
+li {
+    padding-top: 6px;
+}
+
+a {
+    color: #212E48;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 20px;
 }
 
 body {
@@ -114,7 +142,7 @@ article.post {
     text-decoration: none;
     color: #212E48;
     font-size: 26px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .post p {
@@ -177,4 +205,17 @@ article.post {
     padding: 12px;
     color: #212E48;
     font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 12px;
+    color: #212E48;
+    font-weight: 700;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    text-decoration: none
 }
