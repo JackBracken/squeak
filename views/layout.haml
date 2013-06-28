@@ -11,15 +11,13 @@
 %body
   %header
     .header-container
-      %img.headshot{ :src => "/img/me.jpg", :alt => "Me" }
-      %br
       %h1.blog-title
         Jack Bracken
       %ul.nav
-        =menu_builder(:href => "/",       :src => "/img/home.png",    :title => "Home")
-        =menu_builder(:href => "/#",  :src => "/img/photo.png",   :title => "Photography")
-        =menu_builder(:href => "/#",    :src => "/img/rss.png",     :title => "RSS")
-        =menu_builder(:href => "/#",:src => "/img/contact.png", :title => "Contact")
+        =menu_builder(:href => "/",  :src => "/img/home.png")
+        =menu_builder(:href => "/#", :src => "/img/photo.png")
+        =menu_builder(:href => "/#", :src => "/img/rss.png")
+        =menu_builder(:href => "/#", :src => "/img/contact.png")
   .content
     =yield
   %footer
