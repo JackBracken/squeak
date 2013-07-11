@@ -1,6 +1,6 @@
 ol, ul {
     list-style: none;
-    color: #DCD8D2;
+    color: #222;
     font-size: 18px;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     padding-left: 36px;
@@ -31,7 +31,7 @@ h4 {
 }
 
 body {
-    background-color: #66696F;
+    background-color: #F5F5F5;
     min-height: 100%;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
@@ -43,7 +43,7 @@ body {
 }
 
 header {
-    border-bottom: 3px solid #4E5053;
+    background-color: #313131;
     width: 100%;
     height: 60px;
     position: relative;
@@ -51,9 +51,9 @@ header {
 
 footer {
     height: 60px;
-    border-top: 3px solid #4E5053;
+    border-top: 3px solid #222;
     margin-top: -11px;
-    background-color: #4E5053;
+    background-color: #313131;
 }
 
 .header-container {
@@ -69,7 +69,7 @@ footer {
     padding: 6px 12px;
     font-size: 32px;
     float: left;
-    color: #212E48;
+    color: #F5F5F5;
     font-weight: 700;
     font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
     text-decoration: none;
@@ -90,41 +90,29 @@ footer {
     padding: 9px 12px 6px;
 }
 
-.nav li:hover {
-    background-color: #4E5053;
 
-}
-
-.active {
-    background-color: #212E48;
+.nav li:hover, .active {
+    background-color: #F5F5F5;
 }
 
 .active a {
     cursor: default;
 }
 
-article.post {
+article {
     padding-top: 12px;
 }
 
-.post h2 {
-    padding-top: 12px;
-    text-align: center;
-}
-
-.post h2 a {
+h2 a {
     text-decoration: none;
-    color: #212E48;
-    font-size: 26px;
-    font-weight: 700;
 }
 
-.post p {
+p {
     padding-top: 20px;
     font-size: 20px;
     line-height: 30px;
     font-family: Georgia;
-    color: #DCD8D2;
+    color: #222;
     text-align: justify;
 }
 
@@ -152,7 +140,7 @@ article.post {
 .new-post label, h1 {
     padding: 12px;
     font-size: 26px;
-    color: #212E48;
+    color: #F5F5F5;
     font-weight: 700;
     font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
     text-decoration: none;
@@ -177,7 +165,7 @@ article.post {
 .new-post button[type=submit] {
     width: 220px;
     padding: 12px;
-    color: #212E48;
+    color: #F5F5F5;
     font-size: 18px;
 }
 
@@ -188,8 +176,17 @@ h4,
 h5,
 h6 {
     padding: 12px;
-    color: #212E48;
+    color: #222;
     font-weight: 700;
     font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
     text-decoration: none
+}
+
+
+img {
+    /*opacity: 0.02;*/
+}
+
+img:hover{
+    opacity: 1.00;
 }
