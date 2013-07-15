@@ -34,8 +34,8 @@ helpers do
 
   def menu_builder(args = {})
     result = "<li>\n"
-    result += "  <i class=\"#{args[:icon]}\"></i>\n"
     result += "  <a href=\"#{args[:href]}\">\n"
+    result += "  <i class=\"#{args[:icon]}\"></i>\n"
     result += "    #{args[:title]}\n"
     result += "  </a>\n"
     result += "</li>\n"

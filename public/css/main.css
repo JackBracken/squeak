@@ -26,16 +26,25 @@ h4 {
     font-size: 20px;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: #F5F5F5;
-    min-height: 100%;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
 }
 
-.content {
+#container {
+    min-height: 100%;
+    position: relative;
+}
+
+#content {
     width: 700px;
     margin: 0 auto;
+    padding-bottom: 42px;
 }
 
 header {
@@ -46,9 +55,12 @@ header {
 }
 
 footer {
+    position: absolute;
+    bottom: 0;
     height: 42px;
-    border-top: 3px solid #222;
-    margin-top: -11px;
+    width:100%;
+    /*border-top: 3px solid #222;*/
+    /*margin-top: -11px;*/
     background-color: #313131;
 }
 
@@ -89,6 +101,7 @@ footer {
 
 .nav li:hover, .active {
     background-color: #F5F5F5;
+    cursor: pointer;
 }
 
 .active a {
@@ -101,7 +114,8 @@ i {
     background-repeat: no-repeat; 
     background-position: top left; 
     width: 28px;
-    height: 26px;}
+    height: 26px;
+}
 
 .home {
     background-position: 0 0;
@@ -136,7 +150,7 @@ li:hover .contact {
 }
 
 .nav a {
-    display: none;
+    /*display: none;*/
 }
 
 article {

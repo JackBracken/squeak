@@ -8,16 +8,18 @@
   %link{:rel => "stylesheet", :href => "/css/normalize.min.css"}/
   %link{:rel => "stylesheet", :href => "/css/main.css"}/
 
+
 %body
-  %header
-    .header-container
-      %h1.blog-title
-        Jack Bracken
-      %ul.nav
-        =menu_builder(:href => "/",  :title => "Blog",        :icon => "home")
-        =menu_builder(:href => "/#", :title => "photography", :icon => "photo")
-        =menu_builder(:href => "/#", :title => "RSS",         :icon => "rss")
-        =menu_builder(:href => "/#", :title => "Contact",     :icon => "contact")
-  .content
-    =yield
-  %footer
+  #container
+    %header
+      .header-container
+        %h1.blog-title
+          Jack Bracken
+        %ul.nav
+          =menu_builder(:href => "/",  :icon => "home")
+          =menu_builder(:href => "/#", :icon => "photo")
+          =menu_builder(:href => "/#", :icon => "rss")
+          =menu_builder(:href => "/#", :icon => "contact")
+    #content
+      =yield
+    %footer
