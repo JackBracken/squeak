@@ -179,7 +179,7 @@ p {
     font-weight: 700;
 }
 
-.post-separator {
+hr {
     width: 95%;
     margin: 20px auto 8px auto;
     border-style: none;
