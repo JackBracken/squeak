@@ -13,13 +13,14 @@
   #container
     %header
       .header-container
-        %h1.blog-title
-          Jack Bracken
+        %a{href: "/"}
+          %h1.blog-title
+            Jack Bracken
         %ul.nav
-          =menu_builder(:href => "/",  :icon => "home")
-          =menu_builder(:href => "/#", :icon => "photo")
-          =menu_builder(:href => "/#", :icon => "rss")
-          =menu_builder(:href => "/#", :icon => "contact")
+          =menu_builder(href: "/",  icon: "home")
+          =menu_builder(href: "/#", icon: "photo")
+          =menu_builder(href: "/#", icon: "rss")
+          =menu_builder(href: "/#", icon: "contact")
     #content
       =yield
     %footer
