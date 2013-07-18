@@ -1,6 +1,6 @@
 %article.post
-  %h2
-    %a{ :href => "/posts/#{@post.id}" }
+  %h1
+    %a{ href: "/posts/#{@post.id}" }
       = @post.title
     .date= pretty_date(@post.created_at)
   =@post.body
