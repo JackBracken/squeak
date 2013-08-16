@@ -95,3 +95,7 @@ delete "/posts/:id" do
   @post = Post.find(params[:id]).destroy
   redirect "/"
 end
+
+get '/contact' do
+  haml :contact
+end
