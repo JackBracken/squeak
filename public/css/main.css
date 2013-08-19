@@ -88,9 +88,36 @@ header {
     cursor: pointer;
 }
 
+/*320 360 480 640 768*/
+
 @media all and (max-width: 460px) {
+    #container {
+        max-width: 460px;
+    }
+
     .blog-title {
         display: none;
+    }
+}
+
+@media all and (max-width: 360px) {
+    #container {
+        max-width: 360px;
+    }    
+}
+@media all and (max-width: 480px) {
+    #container {
+        max-width: 480px;
+    }
+}
+@media all and (max-width: 640px) {
+    #container {
+        max-width: 640px;
+    }
+}
+@media all and (max-width: 768px) {
+    #container {
+        max-width: 758px;
     }
 }
 
@@ -157,7 +184,6 @@ p:not(:last-child) {
 }
 
 p {
-    /*padding-bottom: 24px;*/
     font-size: 20px;
     line-height: 30px;
     font-family: Georgia;
