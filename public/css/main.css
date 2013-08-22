@@ -264,3 +264,11 @@ h6 {
     font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
     text-decoration: none
 }
+
+@viewport{
+    width: device-width;
+}
+
+@-ms-viewport{
+    width: device-width;
+}
