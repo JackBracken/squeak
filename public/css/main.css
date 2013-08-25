@@ -79,9 +79,36 @@ header {
     cursor: pointer;
 }
 
+/*320 360 480 640 768*/
+
 @media all and (max-width: 460px) {
+    #container {
+        max-width: 460px;
+    }
+
     .blog-title {
         display: none;
+    }
+}
+
+@media all and (max-width: 360px) {
+    #container {
+        max-width: 360px;
+    }    
+}
+@media all and (max-width: 480px) {
+    #container {
+        max-width: 480px;
+    }
+}
+@media all and (max-width: 640px) {
+    #container {
+        max-width: 640px;
+    }
+}
+@media all and (max-width: 768px) {
+    #container {
+        max-width: 758px;
     }
 }
 
@@ -214,6 +241,7 @@ article {
 h1, h2, h3, h4, h5, h6 {
     color: #222;
     font-weight: 700;
+<<<<<<< HEAD
     font-family: PTSans, Arial, Helvetica, sans-serif;
     text-decoration: none;
     padding: 0px 12px 0; 
@@ -230,4 +258,16 @@ p {
 
 p:last-child {
     padding-bottom: 32px;
+=======
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    text-decoration: none
+}
+
+@viewport{
+    width: device-width;
+}
+
+@-ms-viewport{
+    width: device-width;
+>>>>>>> 1f04f261eb95902d307641556f103601bdf7b29e
 }
