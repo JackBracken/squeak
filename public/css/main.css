@@ -186,8 +186,7 @@ button[type=submit]:hover {
 }
 
 article {
-    /*background-color: #eaeae1; Just for visual, remove when done*/
-    margin-top: 24px;
+    margin: 24px;
 }
 
 .header {
