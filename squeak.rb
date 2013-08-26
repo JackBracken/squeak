@@ -21,7 +21,7 @@ helpers do
   end
 
   def pretty_date(time)
-    time.strftime("%^b %e, %Y - %R")
+    time.strftime("%B %e, %Y")
   end
 
   def post_show_page?
@@ -59,21 +59,21 @@ post "/posts" do
                             :autolink => true, 
                             :space_after_headers => true, 
                             :underline => true,
-                            :no_intra_emphasis => true
+                            :no_intra_emphasis => true,
+                            :fenced_code_blocks => true
                           )
   @post.body = markdown.render(@post.body)
   
   if @post.save
-    redirect "posts/#{@post.id}"
+    redirect "posts/#{@post.id}/"
   else
     haml :newpost
   end
 end
 
-get "/posts/:id" do
-  @post = Post.find(params[:id])
-  @title = @post.title
-  haml :post
+get "/posts/:id/?*" do
+  post = Post.find(params[:id])
+  haml :post, locals: {post: post}
 end
 
 get "/posts/:id/edit" do

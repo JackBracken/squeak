@@ -3,8 +3,9 @@
     %h1
       %a{ href: "/posts/#{post.id}" }
         = post.title
-    %h6.meta= pretty_date(post.created_at)
-  %hr/
+    %h6.meta 
+      Posted: 
+      =pretty_date(post.created_at)
   %section.body
     =post.body
   %hr/

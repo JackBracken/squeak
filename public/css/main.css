@@ -11,17 +11,13 @@ html { background-color: #F5F5F5 }
     font-style: normal;
 }
 
-ol, ul {
-    list-style: disc;
-    color: #222;
-    font-size: 18px;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    padding-left: 36px;
-    padding-bottom: 24px;
-}
+ol { list-style: decimal; }
+ul { list-style: disc;}
+ol, ul { margin-left: 10%; padding-bottom: 16px;}
+ol ol, ul ul, ol ul, ul ol { margin-left: 5%; padding-bottom: 0;}
 
 li {
-    padding-top: 6px;
+    padding: 12px 0 0;
 }
 #container {
     max-width: 800px;
@@ -36,6 +32,8 @@ li {
     height: 42px;
     background-color: #313131;
 }
+
+.header a { font-size: 50px; color: #222;}
 
 .bottom {
     position: absolute;
@@ -56,7 +54,7 @@ header {
     float: left;
     color: #F5F5F5;
     font-weight: 700;
-    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-family: PTSans, Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
 
@@ -79,42 +77,25 @@ header {
     cursor: pointer;
 }
 
-/*320 360 480 640 768*/
-
 @media all and (max-width: 460px) {
-    #container {
-        max-width: 460px;
-    }
-
-    .blog-title {
-        display: none;
-    }
+    .blog-title { display: none; }
+    #container { max-width: 460px; } 
 }
 
 @media all and (max-width: 360px) {
-    #container {
-        max-width: 360px;
-    }    
+    #container { max-width: 360px; }
 }
 @media all and (max-width: 480px) {
-    #container {
-        max-width: 480px;
-    }
+    #container { max-width: 480px; }
 }
 @media all and (max-width: 640px) {
-    #container {
-        max-width: 640px;
-    }
+    #container { max-width: 640px; }
 }
 @media all and (max-width: 768px) {
-    #container {
-        max-width: 758px;
-    }
+    #container { max-width: 758px; }
 }
 
-.active a {
-    cursor: default;
-}
+.active a { cursor: default; }
 
 i { 
     display: block;  
@@ -125,37 +106,17 @@ i {
     height: 26px;
 }
 
-.home {
-    background-position: 0 0;
-}
+         .home      { background-position: 0 0; }
+li:hover .home      { background-position: 0 -26px; }
 
-li:hover .home {
-    background-position: 0 -26px;
-}
+         .photo     { background-position: 0 -52px; }
+li:hover .photo     { background-position: 0 -78px; }
 
-.photo {
-    background-position: 0 -52px;
-}
+         .rss       { background-position: 0 -104px; }
+li:hover .rss       { background-position: 0 -130px; }
 
-li:hover .photo {
-    background-position: 0 -78px;
-}
-
-.rss {
-    background-position: 0 -104px;
-}
-
-li:hover .rss {
-    background-position: 0 -130px;
-}
-
-.contact {
-    background-position: 0 -156px;
-}
-
-li:hover .contact {
-    background-position: 0 -182px;
-}
+         .contact   { background-position: 0 -156px; }
+li:hover .contact   { background-position: 0 -182px; }
 
 
 a {
@@ -166,7 +127,7 @@ a {
 hr {
     width: 90%;
     border: 0;
-    border-bottom: 1px solid #222;
+    border-bottom: 2px solid #306060;
     margin-bottom: 24px;
 }
 
@@ -215,9 +176,13 @@ button[type=submit]:hover {
     cursor: pointer;
 }
 
+.meta, a {
+    color: #306060;
+}
+
 .meta {
-    padding-top: 12px;
-    color: #4E5053;
+    border-bottom: 2px solid #222;
+    margin-bottom: 16px;
 }
 
 article {
@@ -230,44 +195,46 @@ article {
     height: 100%;
 }
 
-.header h1 { font-size: 50px; padding-top: 26px;}
-        h1 { font-size: 32px; }
-        h2 { font-size: 28px; }
-        h3 { font-size: 24px; }
-        h4 { font-size: 20px; }
-        h5 { font-size: 18px; }
-        h6 { font-size: 16px; }
-
 h1, h2, h3, h4, h5, h6 {
     color: #222;
     font-weight: 700;
-<<<<<<< HEAD
     font-family: PTSans, Arial, Helvetica, sans-serif;
     text-decoration: none;
-    padding: 0px 12px 0; 
+    padding-bottom: 16px; 
 }
 
+h1 { font-size: 32px; }
+h2 { font-size: 28px; }
+h3 { font-size: 24px; }
+h4 { font-size: 20px; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+
+
 p {
-    padding: 16px 5% 16px;
+    padding: 0 5% 16px;
     font-size: 16px;
     line-height: 26px;
     font-family: Georgia;
     color: #222;
-    /*text-align: justify;*/
 }
 
-p:last-child {
-    padding-bottom: 32px;
-=======
-    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    text-decoration: none
+p:last-child { padding-bottom: 32px; }
+
+@viewport{ width: device-width; }
+
+@-ms-viewport{ width: device-width; }
+
+pre, blockquote {
+    padding-top: 32px;
+    margin: 0 10% 16px;
+    background-color: #E5E5E5;
 }
 
-@viewport{
-    width: device-width;
-}
-
-@-ms-viewport{
-    width: device-width;
->>>>>>> 1f04f261eb95902d307641556f103601bdf7b29e
+pre {
+    line-height: 1.4em;
+    font-family: Courier;
+    overflow-x: auto;
+    padding-left: 32px;
+    padding-right: 32px;
 }

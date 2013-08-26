@@ -22,7 +22,7 @@
           =menu_builder(href: "/#", icon: "photo")
           =menu_builder(href: "/#", icon: "rss")
           =menu_builder(href: "/contact", icon: "contact")
-      =yield
+      =find_and_preserve(yield)
       %footer
   /Add google analytics 
   %script
