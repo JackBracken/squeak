@@ -47,10 +47,6 @@ get '/' do
   haml :index
 end
 
-get '/timetable/?' do
-  haml :timetable
-end
-
 get "/posts/new" do
   @title = "New Post"
   @post = Post.new

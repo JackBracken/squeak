@@ -1,7 +1,4 @@
-html, body { 
-    background-color: #313131; 
-    min-height: 100%;
-}
+html { background-color: #F5F5F5 }
 
 @font-face {
     font-family: 'PTSans';
@@ -23,22 +20,17 @@ li {
     padding: 12px 0 0;
 }
 #container {
+    max-width: 800px;
     min-height: 100%;
     width: 100%;
     height: 100%;
-    background-color: #F5F5F5;
-    padding-top: 1px;
-}
-
-#posts {
-    max-width: 800px;
     margin: 0 auto;
 }
 
 #header-container {
+    width: 100%;
     height: 42px;
-    max-width: 800px;
-    margin: 0 auto;
+    background-color: #313131;
 }
 
 .header a { font-size: 50px; color: #222;}
@@ -54,9 +46,10 @@ header {
     position: relative;
 }
 
-#title {
+.blog-title {
     position: relative;
-    padding: 6px 5% 0;
+    padding: 6px 12px;
+    padding: 6px 5%;
     font-size: 32px;
     float: left;
     color: #F5F5F5;
@@ -238,38 +231,9 @@ pre, blockquote {
 }
 
 pre {
-    padding-bottom: 32px;
     line-height: 1.4em;
     font-family: Courier;
     overflow-x: auto;
     padding-left: 32px;
     padding-right: 32px;
-}
-
-section#timetable {
-    min-width: 100%;
-    min-height: 100%;
-    height: 100%;
-    background-color: #F5F5F5;
-}
-
-table.timetable {
-    padding-top: 100%;
-    margin: 0 auto;
-    width: 90%;
-    height: 90%;
-}
-
-td:nth-of-type(even) {
-    background-color:#F5F5F5;
-    border-bottom: 1px solid #CCCCCC;
-}
-
-td:nth-of-type(odd) {
-    background-color:#CCCCCC;
-    border-bottom: 1px solid #F5F5F5;
-}
-
-td p {
-    font-size: 14px;
 }

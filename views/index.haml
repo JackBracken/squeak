@@ -1,4 +1,2 @@
-#container
-  %section#posts
-    -@posts.each do |p|
-      =	haml :post, locals: {post: p}
+-@posts.each do |p|
+  =	haml :post, locals: {post: p}

@@ -5,6 +5,8 @@ class CreatePosts < ActiveRecord::Migration
       t.text    :body
       t.timestamps
     end
+    Post.create(title: "Test post number 1!", body: "Lauren Ipsum fle   xum nipsum")
+    Post.create(title: "Test post the second.", body: "Aerith and Bob~~")
   end
 
   def down
