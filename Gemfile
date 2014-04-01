@@ -5,8 +5,9 @@ gem "sqlite3"
 gem "activerecord"
 gem "sinatra-activerecord"
 gem "rake"
-gem "git-deploy"
 gem "redcarpet"
+gem 'capistrano', '~> 2.15.5'
+gem 'rvm-capistrano', '~> 1.3.3'
 
 group :development do
   gem "better_errors"	
