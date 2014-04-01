@@ -2,9 +2,9 @@ require 'bundler/setup'
 require 'sinatra'
 require 'haml'
 require 'redcarpet'
-require "better_errors"
 
 configure :development do
+  require "better_errors"
   use BetterErrors::Middleware
   BetterErrors.application_root = File.expand_path("..", __FILE__)
 end
@@ -12,7 +12,7 @@ end
 require_relative 'models/init'
 
 class Squeak < Sinatra::Base
-  
+
   helpers do
   def title
     if @title
@@ -43,7 +43,7 @@ class Squeak < Sinatra::Base
     result += "</li>\n"
   end
 end
-  
+
   get '/' do
     @posts = Post.order("created_at DESC").limit(10)
     haml :index
