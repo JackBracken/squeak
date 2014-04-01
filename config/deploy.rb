@@ -47,4 +47,5 @@ end
 namespace :deploy do
   desc "Not starting as we're running passenger."
   task :start do
+  end
 end
