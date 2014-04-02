@@ -4,7 +4,7 @@ gem "haml"
 gem "sqlite3"
 gem "activerecord"
 gem "sinatra-activerecord"
-gem "rake"
+gem "rake", "10.1.0"
 gem "redcarpet"
 gem 'capistrano', '~> 2.15.5'
 gem 'rvm-capistrano', '~> 1.3.3'
