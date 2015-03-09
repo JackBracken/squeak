@@ -34,14 +34,6 @@ class Squeak < Sinatra::Base
     haml :_delete_post_button, locals: { post_id: post_id}
   end
 
-  def menu_builder(args = {})
-    result = "<li>\n"
-    result += "  <a href=\"#{args[:href]}\">\n"
-    result += "  <i class=\"#{args[:icon]}\"></i>\n"
-    result += "    #{args[:title]}\n"
-    result += "  </a>\n"
-    result += "</li>\n"
-  end
 end
 
   get '/' do
@@ -98,7 +90,4 @@ end
     redirect "/"
   end
 
-  get '/contact' do
-    haml :contact
-  end
 end
